@@ -1,6 +1,6 @@
 {
   "name": "@xavier-castaner-moodys/test-npm",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -17,7 +17,7 @@
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "exit 0",
     "eject": "react-scripts eject",
-    "package": "cd dist && npm publish"
+    "package": "cp package.json dist/package.json && cd dist && npm publish"
   },
   "eslintConfig": {
     "extends": [
